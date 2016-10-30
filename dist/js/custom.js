@@ -7,3 +7,7 @@ $(function(){
         date:"2016-12-24 9:00"
     });
 });
+window.onload=function(){
+    var style="<style></style>";
+    $("iframe").contents().find("body").append(style);
+};
