@@ -29,7 +29,7 @@ $brown: #A52A2A;
 $grey: #A0A0A0;
 $black: #000000;
 
-@import url(http://fonts.googleapis.com/css?family=Roboto); /* GOOGLE FREE FONTS */
+//@import url(http://fonts.googleapis.com/css?family=Roboto); /* GOOGLE FREE FONTS */
 
 body {
     font-family: 'Roboto', sans-serif;
@@ -166,6 +166,7 @@ section {
     font-size: 150px;
 }
 #works{
+    padding-bottom: 15px;
     img{
         width: 250px;
         height:250px;
@@ -224,7 +225,13 @@ section {
     padding-bottom: 60px;
     padding-top: 60px;
 }
-
+.parallax-signup,.parallax-contact{
+    .overlay{
+        min-height: 70px;
+        padding-bottom: 20px;
+        padding-top: 20px;
+    }
+}
 /*================================
     PORTFOLIO / WORK SECTION STYLES
 ==================================*/
@@ -275,6 +282,49 @@ section {
 
 #clients img:hover {
     opacity: 1;
+}
+#signup{
+    padding-top: 20px;
+    padding-bottom: 15px;
+    iframe{
+        max-height:990px!important;
+        overflow: auto;
+    }
+    #step1,#step2,#step3{
+        padding-top: 15px;
+        padding-bottom: 15px;
+    }
+    #step1{
+
+    }
+    #step2{
+        .course-count{
+            display: none;
+        }
+    }
+    #step3{
+        img{
+            width:200px;
+            height:200px;
+            display: inline-block;
+        }
+    }
+}
+#contact{
+    padding-top: 0;
+    padding-bottom: 15px;
+    iframe{
+        max-height: 682px!important;
+        overflow: auto;
+    }
+    .contact-item{
+        padding-left: 20px;
+        padding-top: 60px;
+    }
+    img{
+        width:233px;
+        height:253px;
+    }
 }
 
 /*================================

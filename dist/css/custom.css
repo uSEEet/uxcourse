@@ -15,8 +15,6 @@
 /*================================
     GENERAL STYLES
 ==================================*/
-@import url(http://fonts.googleapis.com/css?family=Roboto);
-/* GOOGLE FREE FONTS */
 body {
   font-family: 'Roboto', sans-serif; }
 
@@ -115,11 +113,13 @@ section {
 #works .portfolio-item i {
   font-size: 150px; }
 
-#works img {
-  width: 250px;
-  height: 250px; }
-#works .portfolio-item .p1, #works .portfolio-item .p2, #works .portfolio-item .p3, #works .portfolio-item .p4, #works .portfolio-item .p5, #works .portfolio-item .p6 {
-  height: 510px; }
+#works {
+  padding-bottom: 15px; }
+  #works img {
+    width: 250px;
+    height: 250px; }
+  #works .portfolio-item .p1, #works .portfolio-item .p2, #works .portfolio-item .p3, #works .portfolio-item .p4, #works .portfolio-item .p5, #works .portfolio-item .p6 {
+    height: 510px; }
 
 /*======================================
     PARALLAX LIKE / STATS SECTION STYLES
@@ -139,6 +139,11 @@ section {
   font-size: 40px;
   padding-bottom: 60px;
   padding-top: 60px; }
+
+.parallax-signup .overlay, .parallax-contact .overlay {
+  min-height: 70px;
+  padding-bottom: 20px;
+  padding-top: 20px; }
 
 /*================================
     PORTFOLIO / WORK SECTION STYLES
@@ -186,6 +191,35 @@ section {
 
 #clients img:hover {
   opacity: 1; }
+
+#signup {
+  padding-top: 20px;
+  padding-bottom: 15px; }
+  #signup iframe {
+    max-height: 990px !important;
+    overflow: auto; }
+  #signup #step1, #signup #step2, #signup #step3 {
+    padding-top: 15px;
+    padding-bottom: 15px; }
+  #signup #step2 .course-count {
+    display: none; }
+  #signup #step3 img {
+    width: 200px;
+    height: 200px;
+    display: inline-block; }
+
+#contact {
+  padding-top: 0;
+  padding-bottom: 15px; }
+  #contact iframe {
+    max-height: 682px !important;
+    overflow: auto; }
+  #contact .contact-item {
+    padding-left: 20px;
+    padding-top: 60px; }
+  #contact img {
+    width: 233px;
+    height: 253px; }
 
 /*================================
     FOOTER SECTION STYLES
