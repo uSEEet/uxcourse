@@ -1,4 +1,9 @@
 $(function(){
+    $(".navbar-nav li").click(function(){
+        if(!$(".navbar-toggle").is(":hidden")){
+            $(".navbar-collapse").collapse('hide');
+        }
+    });
     $(".time-count").countdown({
        template:"<span>%d<br>天</span>" +
        "<span>%h<br>时</span>" +
