@@ -29,7 +29,7 @@ $brown: #A52A2A;
 $grey: #A0A0A0;
 $black: #000000;
 
-@import url(http://fonts.googleapis.com/css?family=Roboto); /* GOOGLE FREE FONTS */
+//@import url(http://fonts.googleapis.com/css?family=Roboto); /* GOOGLE FREE FONTS */
 
 body {
     font-family: 'Roboto', sans-serif;
@@ -166,12 +166,18 @@ section {
     font-size: 150px;
 }
 #works{
+    padding-bottom: 15px;
+    padding-top: 20px;
+    h2{
+        margin:10px 10px;
+        padding: 10px 10px;
+    }
     img{
         width: 250px;
         height:250px;
-        -webkit-border-radius:50%;
-        -moz-border-radius:50%;
-        border-radius:50%;
+        //-webkit-border-radius:50%;
+        //-moz-border-radius:50%;
+        //border-radius:50%;
     }
     .portfolio-item{
         //.p1{
@@ -224,7 +230,14 @@ section {
     padding-bottom: 60px;
     padding-top: 60px;
 }
-
+.parallax-signup,.parallax-contact,.parallax-works{
+    .overlay{
+        min-height: 70px;
+        padding-bottom: 0px;
+        padding-top: 60px;
+        padding-left: 20px;
+    }
+}
 /*================================
     PORTFOLIO / WORK SECTION STYLES
 ==================================*/
@@ -276,18 +289,92 @@ section {
 #clients img:hover {
     opacity: 1;
 }
+#signup{
+    padding-top: 20px;
+    padding-bottom: 15px;
+    iframe{
+        max-height:990px!important;
+        overflow: auto;
+    }
+    #step1,#step2,#step3{
+        padding-top: 15px;
+        padding-bottom: 15px;
+    }
+    #step1{
+
+    }
+    #step2{
+        .course-count{
+            display: none;
+        }
+    }
+    #step3{
+        img{
+            width:200px;
+            height:200px;
+            display: inline-block;
+        }
+    }
+}
+#contact{
+    padding-top: 0;
+    padding-bottom: 15px;
+    iframe{
+        max-height: 682px!important;
+        overflow: auto;
+    }
+    .contact-item{
+        padding-left: 20px;
+        padding-top: 60px;
+    }
+    img{
+        width:233px;
+        height:253px;
+    }
+}
 
 /*================================
     FOOTER SECTION STYLES
 ==================================*/
-
+.footer-img{
+    width: 100%;
+    height: 140px;
+}
 footer {
     padding: 20px;
+    padding-bottom: 10px;
     font-size: 15px;
     text-align: center;
     font-weight: 900;
-    background-color: rgb(35, 133, 161);
+    //background-color: rgb(35, 133, 161);
     color: #fff;
+    border-top: 1px solid #303841;
+    background: #343d47;
+    h5{
+        padding-bottom: 20px;
+    }
+    ul{
+        li{
+            display: inline-block;
+            width:150px;
+            height: 150px;
+            margin-right: 10px;
+        }
+        li:nth-child(1){
+            width:150px;
+            height: 40px;
+        }
+        li:nth-child(3){
+            height: 75px;
+        }
+        li:nth-child(4){
+            height: 50px;
+        }
+        img{
+            width: 100%;
+            height:100%;
+        }
+    }
 }
 
 footer a, footer a:hover {
