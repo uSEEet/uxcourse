@@ -75,6 +75,11 @@ section {
 ==================================*/
 
 /*STYLE OF BACKGROUND IMAGE*/
+.cus-text-danger{
+    color: red;
+    font-size: 20px;
+    font-weight: bold;
+}
 #home {
     background: url(../img/home.jpg) no-repeat center center; /*Full Witdth background image*/
     padding: 0;
@@ -123,8 +128,8 @@ section {
             color: #B413EC;
         }
     }
-    .start-time {
-
+    .cus-text-danger {
+        margin-top: 20px;
     }
 }
 
@@ -310,8 +315,8 @@ section {
     }
     #step3{
         img{
-            width:200px;
-            height:200px;
+            width:250px;
+            height:375px;
             display: inline-block;
         }
     }
@@ -369,6 +374,9 @@ footer {
         }
         li:nth-child(4){
             height: 50px;
+        }
+        li:nth-child(5){
+            height: 48px;
         }
         img{
             width: 100%;

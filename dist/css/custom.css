@@ -50,6 +50,11 @@ section {
     HOME SECTION STYLES
 ==================================*/
 /*STYLE OF BACKGROUND IMAGE*/
+.cus-text-danger {
+  color: red;
+  font-size: 20px;
+  font-weight: bold; }
+
 #home {
   background: url(../img/home.jpg) no-repeat center center;
   /*Full Witdth background image*/
@@ -90,6 +95,8 @@ section {
       color: #FFD700; }
     #home .time-count span:nth-child(4) {
       color: #B413EC; }
+  #home .cus-text-danger {
+    margin-top: 20px; }
 
 /*STYLE FOR OVERLAY CLASS - WHICH IS ABOVE IMAGE WITH OPACITY/TRANSPARENCY 0.75*/
 /*SMPLE CLASS TO ADJUST SECTION PADDING & HEIGHT*/
@@ -209,8 +216,8 @@ section {
   #signup #step2 .course-count {
     display: none; }
   #signup #step3 img {
-    width: 200px;
-    height: 200px;
+    width: 250px;
+    height: 375px;
     display: inline-block; }
 
 #contact {
@@ -256,6 +263,8 @@ footer {
     height: 75px; }
   footer ul li:nth-child(4) {
     height: 50px; }
+  footer ul li:nth-child(5) {
+    height: 48px; }
   footer ul img {
     width: 100%;
     height: 100%; }
