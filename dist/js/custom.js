@@ -52,7 +52,18 @@ function getSelect(){
     for(var i=0;i<course.length;i++){
         countPrice+=course[i]*price[i];
     }
+    //12月1日前9.5折
+    var afterPrice=countPrice;
+    var today=new Date();
+    var month=today.getMonth();
+    if(month<11){
+        afterPrice=countPrice*0.95;
+    }
     $(".price").html(countPrice);
+    $(".after-price").html(afterPrice);
+    if(afterPrice!==countPrice){
+        $(".price").html(countPrice+" * 0.95 = "+afterPrice);
+    }
     $("#step2 tbody").html("");
     if(countPrice!==0){
         $("#step2 tfoot").hide();
