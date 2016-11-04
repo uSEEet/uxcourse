@@ -1,17 +1,15 @@
 $(function(){
-    alert("before");
     $(".navbar-nav li").click(function(){
         if(!$(".navbar-toggle").is(":hidden")){
             $(".navbar-collapse").collapse('hide');
         }
     });
-    alert("nav ok");
     $(".time-count").countdown({
        template:"<span>%d<br>天</span>" +
        "<span>%h<br>时</span>" +
        "<span>%i<br>分</span>" +
        "<span>%s<br>秒</span>",
-        date:"2016-12-24 9:00"
+        date:"2016/12/24 9:00"
     });
     alert("time-count ok?");
     var select="<option>0</option>" +
