@@ -16,7 +16,8 @@
     GENERAL STYLES
 ==================================*/
 body {
-  font-family: 'Roboto', sans-serif; }
+  font-family: 'Roboto', sans-serif;
+  overflow-x: hidden; }
 
 section {
   padding-top: 80px;
@@ -109,6 +110,10 @@ section {
   #services ul {
     text-align: left;
     list-style: none; }
+  #services h4 {
+    padding-bottom: 0;
+    margin-bottom: 0;
+    height: 82px; }
   #services .plan-item {
     min-height: 310px; }
 
@@ -126,6 +131,9 @@ section {
   #works h2 {
     margin: 10px 10px;
     padding: 10px 10px; }
+  #works h5 {
+    overflow: hidden;
+    height: 15px; }
   #works img {
     width: 250px;
     height: 250px; }
@@ -213,6 +221,8 @@ section {
   #signup #step1, #signup #step2, #signup #step3 {
     padding-top: 15px;
     padding-bottom: 15px; }
+  #signup #step1 select {
+    min-width: 55px; }
   #signup #step2 .course-count {
     display: none; }
   #signup #step3 img {
