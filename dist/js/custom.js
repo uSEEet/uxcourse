@@ -11,7 +11,6 @@ $(function(){
        "<span>%s<br>秒</span>",
         date:"2016/12/24 9:00"
     });
-    alert("time-count ok?");
     var select="<option>0</option>" +
         "<option>1</option>"+
         "<option>2</option>"+
