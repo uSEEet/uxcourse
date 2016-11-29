@@ -333,6 +333,16 @@ section {
             display: inline-block;
         }
     }
+    .promo{
+        label{
+            display: inline-block;
+        }
+        input{
+            display: inline-block;
+            max-width: 200px;
+            //margin-bottom: 10px;
+        }
+    }
 }
 #contact{
     padding-top: 0;

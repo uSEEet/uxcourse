@@ -234,6 +234,11 @@ section {
     width: 250px;
     height: 375px;
     display: inline-block; }
+  #signup .promo label {
+    display: inline-block; }
+  #signup .promo input {
+    display: inline-block;
+    max-width: 200px; }
 
 #contact {
   padding-top: 0;

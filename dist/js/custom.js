@@ -30,24 +30,22 @@ $(function(){
     });
 
     $(".student-num").change(getSelect);
+    $(".promo input").change(getSelect);
 });
 window.onload=function(){
     var style="<style></style>";
     // $("iframe").contents().find("body").append(style);
 };
 function getSelect(){
-    var price=[950,1950,3000,1900,3900,4900];
+    var price=[1000,2000];
     var course=[];
     var courseText=[];
+    var promo=["usee","xinsight","youxinren"];
     course[0]=$("#course1").val();
     course[1]=$("#course2").val();
-    course[2]=$("#course3").val();
-    course[3]=$("#course4").val();
-    course[4]=$("#course5").val();
-    course[5]=$("#course6").val();
     course=course.map(function(x){
         return parseInt(x);
-    })
+    });
     var countPrice=0;
     for(var i=0;i<course.length;i++){
         countPrice+=course[i]*price[i];
@@ -58,6 +56,14 @@ function getSelect(){
     var month=today.getMonth();
     if(month<11){
         afterPrice=countPrice*0.95;
+    }else{
+        //渠道优惠9.5折
+        var promoText=$(".promo input").val().toLowerCase();
+        if(promo.indexOf(promoText)===-1){
+            //没优惠
+        }else{
+            afterPrice=countPrice*0.95;
+        }
     }
     $(".price").html(countPrice);
     $(".after-price").html(afterPrice);
@@ -73,13 +79,9 @@ function getSelect(){
                 switch (i){
                     case 0:
                         courseText[i]='<tr>'+
-                            '<td >优学名额'+
+                            '<td >学生'+
                             '</td>'+
-                            '<td>1.原型设计 <br>'+
-                            ' 2.用户体验研究方法'+
-                            '</td>'+
-                            '<td class="text-center">￥950 <br>'+
-                            '   （限额40人）'+
+                            '<td class="text-center">￥1000'+
                             '</td>'+
                             '<td>'+course[i]+
                             '</td>'+
@@ -87,73 +89,9 @@ function getSelect(){
                         break;
                     case 1:
                         courseText[i]='<tr>'+
-                            '<td >优学名额'+
+                            '<td >已工作'+
                             '</td>'+
-                            '<td>1.原型设计 <br>'+
-                            ' 2.用户体验研究方法 <br>'+
-                            '3.名企职业发展，社交鸡尾酒会'+
-                            '</td>'+
-                            '<td class="text-center">￥1950 <br>'+
-                            '   （限额10人）'+
-                            '</td>'+
-                            '<td>'+course[i]+
-                            '</td>'+
-                            '</tr>';
-                        break;
-                    case 2:
-                        courseText[i]='<tr>'+
-                            '<td >优学名额'+
-                            '</td>'+
-                            '<td>1.原型设计 <br>'+
-                            ' 2.用户体验研究方法 <br>'+
-                                '3.名企职业发展，社交鸡尾酒会 <br>'+
-                        '4.眼动仪与用户体验，虚拟现实'+
-                            '</td>'+
-                            '<td class="text-center">￥3000 <br>'+
-                            '   （限额5人）'+
-                            '</td>'+
-                            '<td>'+course[i]+
-                            '</td>'+
-                            '</tr>';
-                        break;
-                    case 3:
-                        courseText[i]='<tr>'+
-                            '<td >学员'+
-                            '</td>'+
-                            '<td>1.原型设计 <br>'+
-                            ' 2.用户体验研究方法'+
-                            '</td>'+
-                            '<td class="text-center">￥1900'+
-                            '</td>'+
-                            '<td>'+course[i]+
-                            '</td>'+
-                            '</tr>';
-                        break;
-                    case 4:
-                        courseText[i]='<tr>'+
-                            '<td >学员'+
-                            '</td>'+
-                            '<td>1.原型设计 <br>'+
-                            ' 2.用户体验研究方法 <br>'+
-                            '3.名企职业发展，社交鸡尾酒会'+
-                            '</td>'+
-                            '<td class="text-center">￥3900 '+
-                            '</td>'+
-                            '<td>'+course[i]+
-                            '</td>'+
-                            '</tr>';
-                        break;
-                    case 5:
-                        courseText[i]='<tr>'+
-                            '<td >学员'+
-                            '</td>'+
-                            '<td>1.原型设计 <br>'+
-                            ' 2.用户体验研究方法 <br>'+
-                            '3.名企职业发展，社交鸡尾酒会 <br>'+
-                            '4.眼动仪与用户体验，虚拟现实'+
-                            '</td>'+
-                            '<td class="text-center">￥4900 <br>'+
-                            '   （限额15人）'+
+                            '<td class="text-center">￥2000'+
                             '</td>'+
                             '<td>'+course[i]+
                             '</td>'+
