@@ -79,8 +79,9 @@ function getSelect(){
                 switch (i){
                     case 0:
                         courseText[i]='<tr>'+
-                            '<td >学生'+
+                            '<td >学生（凭任何大学学生证享受优惠）'+
                             '</td>'+
+                            '<td>1.原型设计 <br>2.用户体验研究方法 <br>3.名企职业发展，社交鸡尾酒会 <br>4.眼动仪与用户体验，虚拟现实 </td>'+
                             '<td class="text-center">￥1000'+
                             '</td>'+
                             '<td>'+course[i]+
@@ -91,6 +92,7 @@ function getSelect(){
                         courseText[i]='<tr>'+
                             '<td >已工作'+
                             '</td>'+
+                            '<td>1.原型设计 <br>2.用户体验研究方法 <br>3.名企职业发展，社交鸡尾酒会 <br>4.眼动仪与用户体验，虚拟现实 </td>'+
                             '<td class="text-center">￥2000'+
                             '</td>'+
                             '<td>'+course[i]+
